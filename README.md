@@ -1,5 +1,6 @@
 # xstation-releases
-Firmware and loader updates for the xstation optical drive emulator
+
+Head over to [the releases page](https://github.com/x-station/xstation-releases/releases) to download the latest updates.   
 
 If this is the first time setting up your SD card, follow this short guide:   
 - create a folder named "00xstation" on your card (this is the xstation system directory)   
