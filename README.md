@@ -1,4 +1,6 @@
-(Head over to [the releases page](https://github.com/x-station/xstation-releases/releases) to download the latest files.)   
+Head over to [the releases page](https://github.com/x-station/xstation-releases/releases) to download the latest files.   
+
+If you'd like to report an issue, please file it in [xstation-issues](https://github.com/x-station/xstation-issues).   
 
 ## XStation ESP32 Firmware [1.0.2] - 2020-10-19
 
