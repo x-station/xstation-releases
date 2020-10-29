@@ -23,9 +23,4 @@ If you'd like to report an issue, please file it in [xstation-issues](https://gi
 
 
 ### SD Card Setup
-If this is the first time setting up your SD card, follow this short guide:   
-- create a folder named "00xstation" on your card (this is the xstation system directory)   
-- firmware updates (update.bin) and the loader application (loader.bin) go into this folder   
-- copy your games to the SD card   
-- try to avoid having more than about 150 items per folder, otherwise scanning the card for games becomes slow   
-- it helps to organize games in folders for their starting letter (0-a, b, c, .. y, z, etc)    
+If this is the first time setting up your xStation, please follow [this short guide](https://github.com/x-station/xstation-releases/blob/main/xStation_User_Guide.pdf).   
