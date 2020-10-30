@@ -2,12 +2,28 @@ Head over to [the releases page](https://github.com/x-station/xstation-releases/
 
 If you'd like to report an issue, please file it in [xstation-issues](https://github.com/x-station/xstation-issues).   
 
+## XStation ESP32 Firmware [1.0.4] - 2020-10-30
+
+### Bug Fixes & Improvements
+- Reset line better debouncing for PU-8 slow rise times
+- Libcrypt protected games now work, no user attention required
+- Fixed remembering path names with special characters
+
+## XStation Loader [1.0.4] - 2020-10-30
+### New Features
+- NeGcon, Mouse and GunCon support
+
+### Bug Fixtures & Improvements
+- Brushed up artwork
+- Further 3rd party accessories tweaks
+
 ## XStation ESP32 Firmware [1.0.2] - 2020-10-19
 
 ### Bug Fixes & Improvements
 - Faster DSP command parsing for improved stability
 - Fixed "Fantastic Pinball Kyuutenkai" black screening
 - Interrupt priority balancing
+
 
 ## XStation Loader [1.0.2] - 2020-10-19
 ### New Features
