@@ -2,6 +2,15 @@ Head over to [the releases page](https://github.com/x-station/xstation-releases/
 
 If you'd like to report an issue, please file it in [xstation-issues](https://github.com/x-station/xstation-issues).   
 
+## XStation ESP32 Firmware + Loader [1.0.5] - 2020-11-26
+
+### Bug Fixes & Improvements
+- Improved accuracy of the SUBQ output signal 
+- SD card drive strength tweaks for SD card extenders
+- Additional SENS subtimings + new sled move algorithm, improves general accuracy and particularly load times in Gran Turismo 2
+- Image parser now ignores "leading dot" system directories such as .Trash
+- Small loader tweaks, fixing Saga Frontier fastboot
+
 ## XStation ESP32 Firmware [1.0.4] - 2020-10-30
 
 ### Bug Fixes & Improvements
