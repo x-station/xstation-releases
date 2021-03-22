@@ -2,6 +2,26 @@ Head over to [the releases page](https://github.com/x-station/xstation-releases/
 
 If you'd like to report an issue, please file it in [xstation-issues](https://github.com/x-station/xstation-issues).   
 
+## XStation Firmware + Loader [1.2.0] - 2021-03-22
+
+### Core changes:
+- fix a race condition that could lock-up the xStation when starting some games (Thanks SubElement!)
+- preparation for folder based browsing and scan speedup
+- free about 20k of memory, use it as additional sector cache
+
+### Loader changes:
+- much faster file scanning
+- when holding L2 + R2, all other inputs are ignored (for PS1Digital)
+- pressing Start fast boots the last played game
+- further improve error condition checks
+
+## Usage
+Extract update.bin and loader.bin to your SD card 00xstation folder.
+Start your console into the loader (press and hold reset for a second if the loader doesn't start automatically).
+Enter the options menu and select Update Firmware, then press Start.
+The firmware will be installed and the console will reboot.
+You may confirm the new version in the loader's options menu.
+
 ## XStation ESP32 Firmware + Loader [1.1.0] - 2021-02-24
 
 ### Bug Fixes & Improvements
