@@ -2,6 +2,26 @@ Head over to [the releases page](https://github.com/x-station/xstation-releases/
 
 If you'd like to report an issue, please file it in [xstation-issues](https://github.com/x-station/xstation-issues).   
 
+## XStation Firmware + Loader [1.3.0] - 2021-05-20
+
+- implement folder based browsing
+  - can be enabled in the loader options
+  - doesn't require game list scanning
+  - multi disc queues not yet implemented (use regular mode for now)
+- rewritten core to remove old dependencies for better maintainability
+- avoid SD card access while seeking
+- overall faster seek times
+- use an SPI peripheral for the DSP sub bus (faster, more efficient)
+- TOC parsing: malformed TRACK and INDEX tags fixed
+- fix gamelist scanning errors / duplicate files for macOS Finder users
+
+## Usage
+Extract update.bin and loader.bin to your SD card 00xstation folder.
+Start your console into the loader (press and hold reset for a second if the loader doesn't start automatically).
+Enter the options menu and select Update Firmware, then press Start.
+The firmware will be installed and the console will reboot.
+You may confirm the new version in the loader's options menu.
+
 ## XStation Firmware + Loader [1.2.0] - 2021-03-22
 
 ### Core changes:
