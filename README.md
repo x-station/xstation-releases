@@ -2,6 +2,33 @@ Head over to [the releases page](https://github.com/x-station/xstation-releases/
 
 If you'd like to report an issue, please file it in [xstation-issues](https://github.com/x-station/xstation-issues).   
 
+## XStation Firmware + Loader [1.4.4] - 2021-10-01
+
+- revert SD card seek shortcuts as some games require all data (example: Dr. Slump)
+- tweaked small seek behaviour to still avoid some accesses
+- games like this and load faster (Music Maker, Excalibur, likely all games with lots of small seeks)
+- avoid data alignment issues when the SD card takes too long to seek
+- drive resets: fix Parappa (NTSC-J) stage end FMVs
+- accessing the CD lead-out area works properly now (Wing Commander 4, some homebrew disks)
+- fixed multiple concurrent commands order and delays (Destruction Derby 2)
+- fix FF8 PAL-E (Libcrypt)
+- TOC parsing: support any number of PREGAP tags (unofficial TR2 translation)
+- tweaked how queues are remembered across cold boots
+
+xLoader:
+- folder based browsing supports disk queues now 
+- Memory Card manager with Memcard Pro support: copy, delete or undelete files
+- two known fastboot issues fixed (Crisis Beat and Elemental Gearbolt), leaving one title to be investigated yet (GT2 Revision 1)
+- when editing a disk queue: press Start to fastboot the queue
+- VRAM cleared on startup and fastboot, avoids visual glitches
+
+## Usage
+Extract update.bin and loader.bin to your SD card 00xstation folder.
+Start your console into the loader (press and hold reset for a second if the loader doesn't start automatically).
+Enter the options menu and select Update Firmware, then press Start.
+The firmware will be installed and the console will reboot.
+You may confirm the new version in the loader's options menu.
+
 ## XStation Firmware + Loader [1.3.0] - 2021-05-20
 
 - implement folder based browsing
