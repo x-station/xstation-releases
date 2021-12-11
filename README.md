@@ -2,6 +2,23 @@ Head over to [the releases page](https://github.com/x-station/xstation-releases/
 
 If you'd like to report an issue, please file it in [xstation-issues](https://github.com/x-station/xstation-issues).   
 
+## XStation Firmware + Loader [1.4.5] - 2021-12-11
+
+- adjusted Libcrypt patching for PAL titles, fixes Ape Escape and Parasite Eve 2
+- seek to sd access has a small holdoff period now, works a bit smoother
+- consistent use of 64bit variables when working with the main timer
+
+xLoader:
+- swapped fastboot method to the "warm boot" style, fixing the games broken in the last release
+- it's winter! :)
+
+## Usage
+Extract update.bin and loader.bin to your SD card 00xstation folder.
+Start your console into the loader (press and hold reset for a second if the loader doesn't start automatically).
+Enter the options menu and select Update Firmware, then press Start.
+The firmware will be installed and the console will reboot.
+You may confirm the new version in the loader's options menu.
+
 ## XStation Firmware + Loader [1.4.4] - 2021-10-01
 
 - revert SD card seek shortcuts as some games require all data (example: Dr. Slump)
