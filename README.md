@@ -1,7 +1,11 @@
-Head over to [the releases page](https://github.com/x-station/xstation-releases/releases) to download the latest files.   
+# Welcome to the xStation releases page!
+Head over to [releases](https://github.com/x-station/xstation-releases/releases) to download the latest files.   
 
 If you'd like to report an issue, please file it in [xstation-issues](https://github.com/x-station/xstation-issues).   
 
+You can find installation guides in the [Wiki](https://github.com/x-station/xstation-releases/wiki), or download them as PDF files.
+
+# Release notes
 ## XStation Firmware + Loader [1.4.5] - 2021-12-11
 
 - adjusted Libcrypt patching for PAL titles, fixes Ape Escape and Parasite Eve 2
