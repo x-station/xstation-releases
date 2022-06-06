@@ -6,6 +6,32 @@ If you'd like to report an issue, please file it in [xstation-issues](https://gi
 You can find installation guides in the [Wiki](https://github.com/x-station/xstation-releases/wiki), or download them as PDF files.
 
 # Release notes
+## XStation Firmware + Loader [1.6.1] - 2022-06-06
+
+- new reverse engineering details lead to a fully revised seek engine
+- game load times reduced, sometimes drastically (Music Maker 50s down to 20s)
+- sd card accesses minimized, entire seek chain can go without data
+- I2S alignment tweaks after seek and spindle action, helps with CDDA becoming quiet
+- Mechacon reset behaviour optimized, fixes disk swapping on some PU-8 machines (FF9)
+- Mechacon quirks (skew measurement) now known and dealt with, removing a source of random behaviour
+- sector error and delay behaviour modified, should cover more corner cases
+- improved slow SD card handling
+
+xLoader:
+- fixes and updates for EARLY PU-8 and PU-7 compatibility
+- fixes glitches in the "Working.." display, thanks to Hanzobi for lending me his machine
+- due to the core becoming so much more efficient, folder based browsing can be near instant now
+- Memory Card browser optimizations for the new MCPro update
+- SetSession command avoids newly found Mechacon quirks
+- classic theme is back :)
+
+## Usage
+Extract update.bin and loader.bin to your SD card 00xstation folder.
+Start your console into the loader (press and hold reset for a second if the loader doesn't start automatically).
+Enter the options menu and select Update Firmware, then press Start.
+The firmware will be installed and the console will reboot.
+You may confirm the new version in the loader's options menu.
+
 ## XStation Firmware + Loader [1.4.5] - 2021-12-11
 
 - adjusted Libcrypt patching for PAL titles, fixes Ape Escape and Parasite Eve 2
