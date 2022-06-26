@@ -6,6 +6,16 @@ If you'd like to report an issue, please file it in [xstation-issues](https://gi
 You can find installation guides in the [Wiki](https://github.com/x-station/xstation-releases/wiki), or download them as PDF files.
 
 # Release notes
+## xLoader update - 2022-06-26
+
+- select between regular and winter theme in the options :)
+- fixed a bug that could cause pads to rumble while in the loader
+- always reset pads to digital mode, fixes pads becoming unresponsive after running some games (Ape Escape, etc)
+
+## Usage
+Extract loader.bin to your SD card 00xstation folder.
+No firmware update is required for this.
+
 ## XStation Firmware + Loader [1.6.1] - 2022-06-06
 
 - new reverse engineering details lead to a fully revised seek engine
