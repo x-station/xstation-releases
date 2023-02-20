@@ -6,6 +6,37 @@ If you'd like to report an issue, please file it in [xstation-issues](https://gi
 You can find installation guides in the [Wiki](https://github.com/x-station/xstation-releases/wiki), or download them as PDF files.
 
 # Release notes
+
+## XStation Firmware + Loader [2.0.2] - 2023-02-20
+
+- detailed research on the PSX data decoder, leading to tweaks on all Mechacon operations
+- seeking optimized to have the decoder see any new data efficiently and as expected
+- decoder data errors are generated when needed, with form and timing similar to the real drive
+- reworked reset timings more (Parappa, Destruction Derby 2)
+- Music Maker now loads the test song in 20 seconds consistently on PU-18 and PU-8 (optimized seek routines)
+- xLoader embedded in firmware: console can start without loader.bin from now on (loader.bin still included for backward compatibility)
+- troubleshooting: the embedded loader can run, even if there is no SD card detected
+- ESP32 peripherals: replaced the pulse counter and timer units with the I2S engine for syncs (less complexity, more reliable)
+- Redump format multi-bin files: improved masking of SD card access penalties when swapping files
+- slow SD card events reworked: audio and FMV now just get a little slow, game data should successfully retry
+- full PU-7 support (1.6.1 had partial)
+- fixed: some quirks in 1.6.1 ironed out, increasing compatibility with some edge case situations
+- fixed: APLL and/or SD card peripherals could attempt to initialize with out of spec settings
+
+xLoader:
+- main menu can save and exit on each item now, item selection wraps (quicker menu navigation)
+- Pop'n Music and similar controllers: double directional inputs are ignored (SOCD masking)
+- NeGcon analog trigger should work
+- tweaked xStation wait routines, should improve reliability with early consoles
+- embedded loader allows exclusive SD card access for file operations (speedup)
+
+## Usage
+Extract update.bin and loader.bin to your SD card 00xstation folder.
+Start your console into the loader (press and hold reset for a second if the loader doesn't start automatically).
+Enter the options menu and select Update Firmware, then press Start.
+The firmware will be installed and the console will reboot.
+You may confirm the new version in the loader's options menu.
+
 ## xLoader update - 2022-06-26
 
 - select between regular and winter theme in the options :)
