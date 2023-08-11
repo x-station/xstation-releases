@@ -5,6 +5,16 @@ If you'd like to report an issue, please file it in [xstation-issues](https://gi
 
 You can find installation guides in the [Wiki](https://github.com/x-station/xstation-releases/wiki), or download them as PDF files.
 
+### SD Card Setup
+If this is the first time setting up your xStation, please follow [this short guide](https://github.com/x-station/xstation-releases/blob/main/xStation_User_Guide.pdf).   
+
+## How to update
+Extract update.bin and loader.bin to your SD card 00xstation folder.
+Start your console into the loader (press and hold reset for a second if the loader doesn't start automatically).
+Enter the options menu and select Update Firmware, then press Start.
+The firmware will be installed and the console will reboot.
+You may confirm the new version in the loader's options menu.
+
 # Release notes
 
 ## XStation Firmware + Loader [2.0.2] - 2023-02-20
@@ -30,22 +40,11 @@ xLoader:
 - tweaked xStation wait routines, should improve reliability with early consoles
 - embedded loader allows exclusive SD card access for file operations (speedup)
 
-## Usage
-Extract update.bin and loader.bin to your SD card 00xstation folder.
-Start your console into the loader (press and hold reset for a second if the loader doesn't start automatically).
-Enter the options menu and select Update Firmware, then press Start.
-The firmware will be installed and the console will reboot.
-You may confirm the new version in the loader's options menu.
-
 ## xLoader update - 2022-06-26
 
 - select between regular and winter theme in the options :)
 - fixed a bug that could cause pads to rumble while in the loader
 - always reset pads to digital mode, fixes pads becoming unresponsive after running some games (Ape Escape, etc)
-
-## Usage
-Extract loader.bin to your SD card 00xstation folder.
-No firmware update is required for this.
 
 ## XStation Firmware + Loader [1.6.1] - 2022-06-06
 
@@ -66,13 +65,6 @@ xLoader:
 - SetSession command avoids newly found Mechacon quirks
 - classic theme is back :)
 
-## Usage
-Extract update.bin and loader.bin to your SD card 00xstation folder.
-Start your console into the loader (press and hold reset for a second if the loader doesn't start automatically).
-Enter the options menu and select Update Firmware, then press Start.
-The firmware will be installed and the console will reboot.
-You may confirm the new version in the loader's options menu.
-
 ## XStation Firmware + Loader [1.4.5] - 2021-12-11
 
 - adjusted Libcrypt patching for PAL titles, fixes Ape Escape and Parasite Eve 2
@@ -82,13 +74,6 @@ You may confirm the new version in the loader's options menu.
 xLoader:
 - swapped fastboot method to the "warm boot" style, fixing the games broken in the last release
 - it's winter! :)
-
-## Usage
-Extract update.bin and loader.bin to your SD card 00xstation folder.
-Start your console into the loader (press and hold reset for a second if the loader doesn't start automatically).
-Enter the options menu and select Update Firmware, then press Start.
-The firmware will be installed and the console will reboot.
-You may confirm the new version in the loader's options menu.
 
 ## XStation Firmware + Loader [1.4.4] - 2021-10-01
 
@@ -110,13 +95,6 @@ xLoader:
 - when editing a disk queue: press Start to fastboot the queue
 - VRAM cleared on startup and fastboot, avoids visual glitches
 
-## Usage
-Extract update.bin and loader.bin to your SD card 00xstation folder.
-Start your console into the loader (press and hold reset for a second if the loader doesn't start automatically).
-Enter the options menu and select Update Firmware, then press Start.
-The firmware will be installed and the console will reboot.
-You may confirm the new version in the loader's options menu.
-
 ## XStation Firmware + Loader [1.3.0] - 2021-05-20
 
 - implement folder based browsing
@@ -130,13 +108,6 @@ You may confirm the new version in the loader's options menu.
 - TOC parsing: malformed TRACK and INDEX tags fixed
 - fix gamelist scanning errors / duplicate files for macOS Finder users
 
-## Usage
-Extract update.bin and loader.bin to your SD card 00xstation folder.
-Start your console into the loader (press and hold reset for a second if the loader doesn't start automatically).
-Enter the options menu and select Update Firmware, then press Start.
-The firmware will be installed and the console will reboot.
-You may confirm the new version in the loader's options menu.
-
 ## XStation Firmware + Loader [1.2.0] - 2021-03-22
 
 ### Core changes:
@@ -149,13 +120,6 @@ You may confirm the new version in the loader's options menu.
 - when holding L2 + R2, all other inputs are ignored (for PS1Digital)
 - pressing Start fast boots the last played game
 - further improve error condition checks
-
-## Usage
-Extract update.bin and loader.bin to your SD card 00xstation folder.
-Start your console into the loader (press and hold reset for a second if the loader doesn't start automatically).
-Enter the options menu and select Update Firmware, then press Start.
-The firmware will be installed and the console will reboot.
-You may confirm the new version in the loader's options menu.
 
 ## XStation ESP32 Firmware + Loader [1.1.0] - 2021-02-24
 
@@ -172,13 +136,6 @@ You may confirm the new version in the loader's options menu.
 - automatically corrects bad EDC/ECC when needed (homebrew, fan translations, patched games)
 - PAL / NTSC selector for the loader
 - snappier button response in the loader
-
-## Usage
-Extract update.bin and loader.bin to your SD card 00xstation folder.
-Start your console into the loader (press and hold reset for a second if the loader doesn't start automatically).
-Enter the options menu and select Update Firmware, then press Start.
-The firmware will be installed and the console will reboot.
-You may confirm the new version in the loader's options menu.
 
 ## XStation ESP32 Firmware + Loader [1.0.5] - 2020-11-26
 
@@ -200,7 +157,7 @@ You may confirm the new version in the loader's options menu.
 ### New Features
 - NeGcon, Mouse and GunCon support
 
-### Bug Fixtures & Improvements
+### Bug Fixes & Improvements
 - Brushed up artwork
 - Further 3rd party accessories tweaks
 
@@ -211,19 +168,14 @@ You may confirm the new version in the loader's options menu.
 - Fixed "Fantastic Pinball Kyuutenkai" black screening
 - Interrupt priority balancing
 
-
 ## XStation Loader [1.0.2] - 2020-10-19
 ### New Features
 - Added a Dark Theme
 - You can now choose your theme from the Options menu
 - All options saved to SD card
 
-### Bug Fixtures & Improvements
+### Bug Fixes & Improvements
 - Restructured the Options Menu
 - Improved third-party controller support
-- Fixed an issue with "Castlemania SotN" through fastboot
+- Fixed an issue with "Castlevania SotN" through fastboot
 - Many more fastboot improvements
-
-
-### SD Card Setup
-If this is the first time setting up your xStation, please follow [this short guide](https://github.com/x-station/xstation-releases/blob/main/xStation_User_Guide.pdf).   
